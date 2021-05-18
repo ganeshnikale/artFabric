@@ -1,0 +1,138 @@
+.card{
+    &__list {
+        padding: 5px;
+        margin-bottom: 35px;
+        transition: all .3s ease;
+        width: 300px;
+        margin: 20px 0;
+        &:not(:first-child){
+            margin-left: 20px;
+        }
+        
+        &:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0px 7px 6px 2px rgba($black,  .30);
+        }
+        &--image {
+            position: relative;
+            @include border-radius(12px);
+            overflow: hidden;
+            
+            .img-btn-wrap{
+                position: absolute;
+                top: 0px;
+                left: 0;
+                width: 100%;
+                padding: 20px;
+                .btn__flat{
+                    margin: 0 15px;
+                    height: 40px;
+                    width: 40px;
+                    @include font-size(25);
+                    padding: 0;
+                }
+                .btn__flat--dark-bg{
+                    &:focus,
+                    &:active{
+                        @include font-size(22);
+                    }
+                }
+                .btn__flat--white-bg{
+                    right: 0;
+                    &:focus,
+                    &:active{
+                        @include font-size(22);
+                    }
+                }
+            }
+            img{
+                width: 100%;
+            }
+            .additional-info{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                background-color: rgba($black, .6);
+                padding: spacing(15) spacing(45);
+                width: 100%;
+                transition: all 0.3s ease;
+                
+                p {
+                    color: $white;
+                }
+            }
+        }
+        .card-body{
+            padding: 0 10px;
+        }
+        &--price-details {
+            border-bottom: 1px solid rgba($borderColor, .2);
+            padding: 10px 5px;
+            .product-title{
+                @include font-size(16);
+                font-family: $fontSemiBold;
+                color:$black;
+            }
+            .product-price{
+                @include font-size(16);
+                font-family: $fontBold;
+                color:$black;
+                span{
+                    font-family: $fontReg;
+                    color: $gray2
+                }
+            }
+            .product-discription{
+                @include font-size(16);
+                color: $gray2;
+                margin-top:10px;
+            }
+        }
+        &--status {
+            border-bottom: 1px solid rgba($borderColor, .2);
+            padding: 10px 5px;
+            .product-detail{
+                color: $gray2;
+                @include font-size(14);
+            }
+            .product-status{
+                color: $gray1;
+                @include font-size(16);
+                img {
+                    width: 15px;
+                    top: 1px;
+                    position: relative;
+                    display: inline-block;
+                    margin-right: 5px;
+                }
+            }
+        }
+        &--footer {
+            padding: 10px 5px;
+            .product-final-price{
+                @include font-size(14);
+                color: $gray1;
+                span{
+                    font-family: $fontBold;
+                }
+            }
+            .btn__primary{
+                @include gradient( $secondary, $tertiary, horizontal);
+                @include border-radius(12px);
+                @include font-size(25);
+                height: 40px;
+                width: 60px;
+                padding-top: 7px;
+            }
+            .action__btn{
+                padding: 5px;
+                color: $gray1;
+                @include font-size(25);
+                height: 40px;
+            }
+        }
+        
+        
+        
+      }
+}

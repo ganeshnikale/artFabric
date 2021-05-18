@@ -1,0 +1,16 @@
+
+
+
+  .available-design{
+    &.swiper-container {
+      width: 100%;
+      height: auto;
+    }
+    .swiper-slide{
+     
+      @include border-radius(12px);
+      overflow: hidden;
+    }
+  }
+
+  

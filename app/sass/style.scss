@@ -1,0 +1,33 @@
+ @import './grid/bootstrap.scss';
+ @import './abstract/variables';
+ @import './abstract/mixin';
+ @import './abstract/function';
+
+
+ @import './base/animation';
+ @import './base/base';
+ @import './base/fonts';
+ @import './base/typo';
+ @import './base/utility';
+
+ @import './component/buttons';
+ @import './component/card';
+ @import './component/breadcrum';
+ @import './component/price-info';
+ @import './component/available-shades';
+ @import './component/accordion';
+ @import './component/fabric-details';
+ @import './component/swiper-carousel';
+
+ @import './layout/grid';
+ @import './layout/header';
+ @import './layout/navigation';
+ @import './layout/footer';
+ @import './layout/left-nav';
+
+
+ @import './page/home';
+ @import './page/product-list';
+ @import './page/product-details';
+
+ @import url('./icons.css');

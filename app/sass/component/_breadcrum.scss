@@ -1,0 +1,32 @@
+.breadcrum{
+    display: flex;
+    flex-direction: row;
+    &__list-item{
+        list-style-type: none;
+        @include font-size(12);
+        color: $gray1;
+        position: relative;
+        
+        &:not(:first-child){
+            margin-left: 10px ;
+            padding-left: 10px;
+            &:before {
+                content: "";
+                border-left: 1px solid $borderColor;
+                position: absolute;
+                top: 2px;
+                left: 0;
+                height: 75%;
+                transform: rotate(20deg);
+            }
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $gray3;
+        &:hover{
+            color: $gray2;
+        }
+    }
+}

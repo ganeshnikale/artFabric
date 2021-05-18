@@ -1,0 +1,22 @@
+.fabric-details {
+    column-count: 2;
+    &__item {
+        list-style-type: none;
+        @include font-size(12);
+        margin: 5px 0;
+    }
+
+    &__label {
+        color: rgba($gray2, .5);
+        font-family: $fontSemiBold;
+        min-width: 120px;
+        display: inline-block;
+       
+    }
+
+    &__value {
+        color: $black;
+        font-family: $fontReg;
+        display: inline-block;
+    }
+}

@@ -1,0 +1,48 @@
+.price-info {
+    display: flex;
+    border-top: 1px solid rgba($borderColor, .2);
+    border-bottom: 1px solid rgba($borderColor, .2);
+    
+    &__item {
+        list-style-type: none;
+        &:not(:first-child){
+            margin-left: 15px;
+            padding-left: 15px;
+            border-left: 1px solid rgba($borderColor, .3);
+        }
+       
+    }
+    &__label {
+        font-family: $fontBold;
+        @include font-size(14);
+        color: $black;
+        margin-bottom: 10px;
+    }
+    &__value {
+        @include font-size(24);
+        color :$black;
+        font-family: $fontBold;
+        span.unit {
+            color: $gray2;
+            @include font-size(18);
+            font-weight: 400;
+        }
+
+        &--font-normal{
+            font-family: $fontReg;
+        }
+
+        .icon-rupee {
+            @include font-size(18);
+        }
+
+        .stock-icon {
+            color: $primary;
+            @include font-size(24);
+            top: 4px;
+            position: relative;
+        }
+
+    }
+
+}

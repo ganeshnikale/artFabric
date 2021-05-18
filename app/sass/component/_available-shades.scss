@@ -1,0 +1,26 @@
+.available-shades{
+    display: flex;
+    &--title{
+        font-family: $fontSemiBold;
+        @include font-size(14);
+        margin-bottom: 15px;
+        span.shade-count{
+            color: $gray1;
+            font-family: $fontReg;
+            margin-left: 10px;
+            padding-left: 10px;
+            border-left: 1px solid $gray2;
+        }
+
+    }
+
+    &--color{
+        height: 36px;
+        width: 36px;
+        @include border-radius(12px);
+        list-style-type: none;
+        &:not(:first-child){
+            margin-left: 15px;
+        }
+    }
+}

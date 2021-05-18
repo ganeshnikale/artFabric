@@ -1,0 +1,92 @@
+button.btn {
+    background: transparent;
+    outline: none;
+    border: transparent;
+    padding: 1.5rem;
+    font-family: $fontBold;
+    cursor: pointer;
+    transition: all .3s ease;
+    &__round-s {
+        @include border-radius($button-radius1);
+        border:1px solid $button-border;
+        @include font-size(15);
+        color:$primary;
+    }
+    &__round {
+        @include border-radius($button-radius2);
+        border:1px solid rgba($button-border, 40);
+    }
+
+    &__primary {
+        @include gradient( $secondary, $tertiary, vertical);
+        @include font-size(18);
+        @include border-radius(24px);
+        @include box-shadow( 0, 10px, 21px, 0, rgba(47, 89, 81, 0.34));
+        color:$white;
+        
+        &:hover{
+            transform: translateY(-5px);
+            @include box-shadow( 0, 5px, 5px, 0, rgba(47, 89, 81, 0.34));
+        }
+        &:focus,
+        &:active,
+        .active{
+            transform: translateY(0);
+            @include box-shadow( 0, 10px, 21px, 0, rgba(47, 89, 81, 0.34));
+            background: $gray4;
+            color: $buttonFocus;
+        }
+    }
+
+    &__light{
+        background-color: $buttonLight;
+        color: rgba($gray1, 10);
+        @include border-radius(12px);
+        @include font-size(16);
+    }
+
+    &__flat{
+        padding: 5px 20px;
+        @include border-radius(12px);
+        display: inline;
+        width: max-content;
+        &--dark-bg{
+            background: $flatDarkBtn;
+            border: 1px solid $white;
+            color:$white;
+            &:hover,&:focus,&:active,.active{
+                background-color: $white;
+                color: $flatDarkBtn;
+                border: 1px solid $flatDarkBtn;
+                @include font-size(22);
+            }
+        }
+        &--white-bg{
+            background-color: $white;
+            color: $flatDarkBtn;
+            &:hover,&:focus,&:active,.active{
+                background-color: $flatDarkBtn;
+                color: $white;
+            }
+        }
+    }
+    
+  }
+
+  .btn-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.badge {
+    display: inline-block;
+    @include border-radius(8px);
+    padding: 8px 12px;
+    color:$white;
+    font-family: $fontSemiBold;
+    &__primary{
+        @include gradient( $secondary, $tertiary, horizontal);
+    }
+}

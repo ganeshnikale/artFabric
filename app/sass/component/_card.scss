@@ -1,0 +1,21 @@
+.card{
+    @include border-radius(16px);
+    @include box-shadow( 0, 2px, 20px, 0, rgba(0, 0, 0, 0.17));
+    background-color: $white;
+    padding: spacing(20);
+
+    &__header {
+        &--title {
+            @include font-size(20);
+            color: $black;
+            font-family: $fontSemiBold;
+            margin-bottom: 10px;
+        }
+    
+        &--sub-title {
+            @include font-size(16);
+            color: $gray2;
+            font-family: $fontReg;
+        }
+    }
+}

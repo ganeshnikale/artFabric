@@ -1,0 +1,47 @@
+.top-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+   
+    &__item {
+        list-style-type: none;
+        padding: 0 30px;
+        position: relative;
+        &:not(:last-child):after {
+            
+                content: "";
+                position: absolute;
+                top:5px;
+                right: 0;
+                height: 50%;
+                border-right: 1px solid rgba($borderColor, .2);
+        
+        }
+    }
+    &__link {
+        @include font-size(28);
+        color: $gray1;
+        text-decoration: none;
+        &:hover{
+            color: $primary;
+        }
+    }
+    &__icon {
+    }
+    &__profile {
+        .user-info{
+            display: inline-block;
+            .user-name{
+                font-family: $fontBold;
+                @include font-size(12);
+                color: $black;
+            }
+
+            .user-mail{
+                @include font-size(10);
+                color: $gray2;
+            }
+        }
+    }
+  }
