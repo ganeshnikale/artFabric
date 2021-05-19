@@ -36,6 +36,9 @@ button.btn {
             background: $gray4;
             color: $buttonFocus;
         }
+        &--long {
+            padding: spacing(15) spacing(80);
+        }
     }
 
     &__light{
@@ -47,7 +50,7 @@ button.btn {
 
     &__flat{
         padding: 5px 20px;
-        @include border-radius(12px);
+        // @include border-radius(12px);
         display: inline;
         width: max-content;
         &--dark-bg{

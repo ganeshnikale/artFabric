@@ -1,0 +1,29 @@
+.meeting-products {
+    
+    &__count {
+        @include font-size(14);
+        color: $black;
+    }
+
+    &__images {
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       justify-content: flex-start;
+       margin-top:10px;
+
+    }
+    &__items {
+        list-style-type: none;
+        @include border-radius(12px);
+        overflow: hidden;
+        &:not(:first-child){
+            margin-left: 15px;
+        }
+        &--text {
+            color: $gray2;
+            @include font-size(16);
+        }
+    }
+
+}

@@ -11,12 +11,6 @@
   font-style: normal;
 
 }
-[class*=" icon-"]{
-  line-height: 0;
-  padding: 0;
-  margin: 0;
-  display: inline-flex;
-}
 
 [data-icon]:before {
   font-family: "art-icons" !important;
@@ -79,4 +73,13 @@
 }
 .icon-plus:before {
   content: "\6c";
+}
+.icon-flame:before {
+  content: "\6d";
+}
+.icon-share:before {
+  content: "\6e";
+}
+.icon-trash:before {
+  content: "\6f";
 }

@@ -1,7 +1,21 @@
 .card {
     &__notes {
-        &__images {
-            
+        margin-bottom: 25px;
+        &--title {
+            @include font-size(18);
+            color: $black;
+            font-family: $fontSemiBold;
+
+            .meeting__with {
+                font-family: $fontReg;
+                margin-left: 10px;
+                padding-left: 10px;
+                border-left: 1px solid rgba($borderColor, .5);
+            }
+        }
+
+        &--body {
+            padding: 15px 0;
         }
      }
 }
