@@ -35,27 +35,6 @@ body {
     background-color: $bodyBg;
     transition: all 0.3s ease;
 
-    &.menu-open {
-        .left-nav {
-            &-wraper{
-               left:0px;
-            }
-            &__link {
-                flex-direction: row;
-            }
-            
-        }
-        
-        main {
-            width: calc(100% - 290px);
-            margin-left: 290px;
-
-            @include screen(mobile){
-                width: calc(100% - 90px);
-                margin-left: 90px;
-            }
-        }
-    }
 }
 
 

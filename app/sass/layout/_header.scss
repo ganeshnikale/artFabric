@@ -13,15 +13,19 @@ header{
 
 main{
     margin-top: 90px;
-    margin-left: 290px;
-    width: calc(100% - 290px);
+    margin-left: 70px;
+    width: calc(100% - 70px);
+
     > .container {
         max-width: 100%;
+        padding: 0;
+        
     }
-    @include screen(mobile) {
-        margin-left: 90px;
-        width: calc(100% - 90px);
-    }
+   
+    @include media-breakpoint-up(md) { 
+        margin-left: 290px;
+        width: calc(100% - 320px);
+     }
    
 }
 

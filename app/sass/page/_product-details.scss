@@ -50,9 +50,30 @@
             position: relative;
             top: 5px;
         }
+
+        .btn-group {
+            flex-wrap: wrap;
+            .btn__round,
+            .btn__primary {
+                width: 100%;
+                margin-top: 20px;
+            }
+            @include media-breakpoint-up(md) {
+                .btn__primary {
+                    width: calc( 100% - 95px);
+                    height: 72px;
+                    
+                }
+                .btn__round {
+                    width: 72px;
+                    height: 72px;
+                    
+                }
+            }
+        }
+
         .btn__light{
             width: 100%;
-            
         }
     }
 
