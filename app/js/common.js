@@ -25,18 +25,14 @@ $('.accordion__tab-header').click(function() {
 
     
     $('.menu-toggle').click(function(event){
-        event.stopPropagation();
+        
         $('body').addClass('menu-open');
         
     });
 
-    $('body').click(function(event) {
-        
-        $(this).removeClass('menu-open')
-        event.stopPropagation();
+    $('.backdrop').on('click', function(){
+        $('body').removeClass('menu-open');
     })
-
-
 
 
 

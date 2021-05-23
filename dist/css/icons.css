@@ -83,3 +83,6 @@
 .icon-trash:before {
   content: "\6f";
 }
+.icon-menu-button:before {
+  content: "\70";
+}

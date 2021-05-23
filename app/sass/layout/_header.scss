@@ -13,19 +13,22 @@ header{
 
 main{
     margin-top: 90px;
-    margin-left: 70px;
-    width: calc(100% - 70px);
+    margin-left: 20px;
+    margin-right: 20PX;
+    width: calc(100% - 40px);
+    @include media-breakpoint-up(md) { 
+        margin-left: 290px;
+        margin-right: 0PX;
+        width: calc(100% - 290px);
+     }
 
     > .container {
         max-width: 100%;
         padding: 0;
-        
+
     }
    
-    @include media-breakpoint-up(md) { 
-        margin-left: 290px;
-        width: calc(100% - 320px);
-     }
+    
    
 }
 

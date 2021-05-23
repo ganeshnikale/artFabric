@@ -8,14 +8,14 @@
 
     &-wraper{
       position: fixed;
-      left: 0;
+      left: -260px;
       top: 67px;
       z-index: 11;
       transition: all .3s ease;
       width: 260px;
-      left: 0px;
-      @include screen(mobile){
-        left: -190px;
+      @include media-breakpoint-up(md){
+        
+        left: 0px;
       }
     }
 
@@ -70,10 +70,6 @@
       z-index: 99;
       position: relative;
       flex-direction: row;
-      @include screen(mobile){
-        flex-direction: row-reverse;
-      }
-
     }
     &__icon {
     }
@@ -112,16 +108,4 @@
     top: 0;
     left: 0;
     z-index: 10;
-  }
-  .nav__open {
-    .backdrop {
-      display: block;
-    }
-  }
-
-  .menu-toggle {
-    display: none;
-    @include screen(mobile){
-      display: inline-block;
-    }
   }

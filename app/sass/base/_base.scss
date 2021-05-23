@@ -35,6 +35,15 @@ body {
     background-color: $bodyBg;
     transition: all 0.3s ease;
 
+    &.menu-open {
+        .left-nav-wraper {
+            left: 0;
+        }
+        .backdrop {
+            display: block;
+          }
+    }
+
 }
 
 
