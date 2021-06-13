@@ -1,0 +1,31 @@
+table {
+    border-collapse: collapse;
+}
+.table-reponsive {
+    max-height: 400px;
+    overflow-y: scroll;
+}
+.table {
+    width: 100%;
+}
+
+.stock-table {
+   
+    th, td {
+        text-align: left;
+        padding:15px;
+        &:not(:last-child) {
+            border-right: 1px solid $borderColor;
+        }
+    }
+    th {
+        background-color: rgba($stock-table-heder, 0.4);
+        @include font-size(16);
+        font-family: $fontSemiBold;
+        color: $primary;
+    }
+    td {
+        @include font-size(18);
+        font-family: $fontReg;
+    }
+}

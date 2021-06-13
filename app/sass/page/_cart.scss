@@ -1,0 +1,61 @@
+.cart-page {
+    margin-bottom: 30px;
+    .cost-per-unit {
+        span {
+            @include font-size(18);
+            font-family: $fontReg;
+            color: $gray2;
+            &.unit {
+                @include font-size(14);
+                margin-left: 15px;
+            }
+        }
+    }
+    .qty-controll {
+        margin-top: -12px;
+    }
+
+    .icon-trash {
+        @include font-size(25);
+        color: $black;
+    }
+}
+
+.cart-summery {
+    background-color: rgba($summeryBg, .05);
+    @include border-radius(20px);
+    padding: 20px 30px;
+    &__items {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        list-style-type: none;
+        &:not(:last-child) {
+            margin-bottom: 10px
+        }
+    }
+    
+    &__total {
+        margin-top: 15px;
+        &--label, &--value  {
+            @include font-size(20);
+            font-family: $fontBold;
+            color: $black;
+        }
+         &--value {
+            @include font-size(32);
+        }    
+    }
+
+    &__label, &__value {
+        @include font-size(14);
+        color: $gray2;
+    }
+
+}

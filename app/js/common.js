@@ -35,6 +35,10 @@ $('.accordion__tab-header').click(function() {
     })
 
 
+    $('.modal-trigger').click(function() {
+        var myEm = $(this).attr('data-modal');
+        $('.modal[data-modal-target = '+myEm+']').toggleClass('show');  
+    });
 
 // el[i].addEventListener('click', function(){
 //     var val = el.dataset.tabHeader;

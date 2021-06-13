@@ -74,6 +74,16 @@ button.btn {
             }
         }
     }
+
+    &__slim {
+        padding: 12px 24px;
+        @include font-size(16);
+        font-family: $fontReg;
+    }
+
+    &__block {
+        width: 100%;
+    }
     
   }
 
@@ -109,3 +119,18 @@ button.btn {
         @include box-shadow(0, 10px, 21px, 0, rgba(47, 89, 81, 0.34));
     }
 }
+
+.btn__flat.btn-close {
+    background-image: url('../../../img/close-icon.png');
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    background-size: cover;
+    @include opacity(.6);
+
+    &:hover {
+        @include opacity(1);
+    }
+}
+
+

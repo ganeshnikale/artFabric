@@ -22,6 +22,8 @@
  @import './component/meeting-details';
  @import './component/forms';
  @import './component/figure';
+ @import './component/modal';
+ @import './component/table';
 
  @import './layout/grid';
  @import './layout/header';
@@ -35,5 +37,8 @@
  @import './page/product-details';
  @import './page/notes';
  @import './page/note-details';
+ @import './page/cart';
+ @import './page/demo-details';
+
 
  @import url('./icons.css');

@@ -31,3 +31,29 @@
        }
     }
 }
+
+
+.accordion-tabs {
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    border-bottom: 1px solid $borderColor;
+
+    &--item {
+        text-align: center;
+        list-style-type: none;
+        position: relative;
+        top: -2px;
+    }
+    &--link {
+        text-decoration: none;
+        @include font-size(28);
+        color: $gray1;
+        font-family: $fontReg;
+        padding: 0 20px;
+    }
+    &--active {
+        font-family: $fontSemiBold;
+        border-bottom: 5px solid $secondary;
+    }
+}

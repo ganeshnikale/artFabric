@@ -1,0 +1,62 @@
+.modal {
+    &-dialog {
+        
+    }
+
+    &-content {
+        @include border-radius(35px);
+        padding: spacing(40);
+    }
+
+    &-header {
+        align-items: flex-start; 
+        .btn-close {
+
+        }
+    }
+
+    &-title {
+
+    }
+
+    &-body {
+
+    }
+
+    &-footer {
+
+    }
+}
+
+
+.cart-modal {
+
+    .modal-header {
+       border-bottom: transparent;
+    }
+
+}
+
+.stock-modal {
+    .modal-content {
+       padding: 0;
+   }
+    .modal-header {
+        padding: spacing(20) spacing(40);
+        .modal-title {
+            @include font-size(24);
+            font-family: $fontBold;
+            color: $gray1;
+        }
+        .modal-sub-title {
+            @include font-size(20);
+            font-family: $fontReg;
+            color: $gray2;
+        }
+        
+    }
+    .modal-body {
+        padding: 0;
+        margin: 0;
+    }
+}

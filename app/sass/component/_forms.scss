@@ -1,4 +1,4 @@
-.form-control {
+.form-control, .form-select {
     @include border-radius(12px);
     border: 1px solid rgba($borderColor, .40);
     height: 60px;
@@ -21,6 +21,9 @@
     &--gray {
         background: $bodyBg;
     }
+    &__dark {
+        padding-bottom: 10px;
+    }
 }
 
 .form-controll {
@@ -29,4 +32,34 @@
 
 textarea {
     resize: none;
+}
+
+.form-check-label {
+    @include font-size(15);
+    font-family: $fontReg;
+    color: $gray1;
+    display: inline-block;
+    margin-left: 13px;
+    span {
+        display: block;
+        strong {
+            color: $black;
+        }
+    }
+}
+
+.form-check-input {
+    width: 20px;
+    height: 20px;
+    &:checked {
+        background-color: $black;
+        border-color: $black;
+    }
+    &:focus {
+        box-shadow: 0 0 0 0.25rem rgba($black, 0.25);
+    }
+}
+
+.cart-textarea {
+    height: calc(100% - 30px);
 }

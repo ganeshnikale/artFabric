@@ -1,0 +1,26 @@
+.active-demo {
+    background-color: $primary;
+    
+    .product-image-title {
+        color: $white;
+        @include font-size(16);
+        font-family: $fontSemiBold;
+        margin-bottom: 5px;
+    }
+    p {
+        color: $gray3;
+        @include font-size(16);
+        font-family: $fontReg;
+        &:last-child {
+            margin-top: 15px;
+        }
+    }
+
+    &__remove-btn {
+        color: $white;
+        @include font-size(20);
+    }
+    .card__list--price-details {
+        border-bottom: transparent;
+    }
+}
