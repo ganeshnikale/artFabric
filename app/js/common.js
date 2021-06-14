@@ -1,4 +1,5 @@
-var mySwiper = new Swiper('.available-design', {
+var swiperCarousel = '.available-design ',
+options = {
     loop: true,
     speed: 1000,
     slidesPerView: 5,
@@ -11,7 +12,62 @@ var mySwiper = new Swiper('.available-design', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },  
-});
+};
+
+
+   
+
+    var mySwiper = new Swiper(swiperCarousel, options);
+    mySwiper.init();
+
+    var swiper = new Swiper('.swiper-coverflow', {
+        effect: 'coverflow',
+        loop: true,
+        centeredSlides: true,
+        slidesPerView: 3,
+        initialSlide: 3,
+        keyboardControl: true,
+        mousewheelControl: true,
+        lazyLoading: true,
+        preventClicks: false,
+        preventClicksPropagation: false,
+        lazyLoadingInPrevNext: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+       
+        coverflow: {
+            rotate: 0,
+            stretch: 40,
+            depth: 400,
+            modifier: 1,
+            
+            slideShadows : false,
+        }
+    });
+
+
+    var swiperThumbnal = new Swiper('.swiper-thumb', {
+        spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesVisibility: true,
+      watchSlidesProgress: true,
+     });
+
+    var swiperThumbnalSlide = new Swiper('.swiper-slide--main', {
+        spaceBetween: 10,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        thumbs: {
+          swiper: swiperThumbnal
+        }
+    });
+
+   
+ 
+
 
 $('.accordion__tab-header').click(function() {
     // $('.accordion__tab-container, .accordion__tab-header').removeClass('open');
@@ -40,17 +96,6 @@ $('.accordion__tab-header').click(function() {
         $('.modal[data-modal-target = '+myEm+']').toggleClass('show');  
     });
 
-// el[i].addEventListener('click', function(){
-//     var val = el.dataset.tabHeader;
-//     console.log(val);
-//     var x = target.getAttributeNode('data-tab-container').value;
-//     if(target.dataset.tabContainer == val){
-//         target.classList.toggle('open')
-//     }
-//     console.log(target.getAttributeNode('data-tab-container').nodeValue);
-
-
-// });
 
 
 

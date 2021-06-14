@@ -1,0 +1,20 @@
+.demo1-card {
+    &__body {
+        padding: 10px 15px;
+    }
+    &__product-title {
+        color: $black;
+        text-decoration: none;
+        @include font-size(20);
+        font-family: $fontSemiBold;
+    }
+
+    &__discription {
+        font-family: $fontReg;
+    }
+    .action__btn {
+        padding: 15px 0;
+        @include font-size(20);
+        
+    }
+}

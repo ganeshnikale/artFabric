@@ -5034,7 +5034,7 @@ textarea.form-control-lg {
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; }
+  box-sizing: border-box; }
 
 :root {
   font-size: 10px; }
@@ -5854,6 +5854,28 @@ table {
   font-size: 1.8rem;
   font-family: "Heebo-regular"; }
 
+.swiper-coverflow .swiper-slide.swiper-slide-next,
+.swiper-coverflow .swiper-slide.swiper-slide-prev {
+  transform: translate3d(0px, 0px, -300px) rotateX(0deg) rotateY(0deg) scale(1) !important;
+  opacity: 1;
+  filter: alpha(opacity=100); }
+
+.swiper-coverflow .swiper-slide {
+  transform: translate3d(0px, 0px, -600px) rotateX(0deg) rotateY(0deg) scale(1) !important;
+  opacity: 0.6;
+  filter: alpha(opacity=60); }
+
+.swiper-coverflow .swiper-slide.swiper-slide-active {
+  transition-duration: 0ms;
+  transform: translate3d(0px, 0px, -1.68168px) rotateX(0deg) rotateY(0.84084deg) scale(1) !important;
+  z-index: 1;
+  opacity: 1;
+  filter: alpha(opacity=100); }
+
+.swiper-coverflow.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-coverflow.swiper-container-3d .swiper-slide-shadow-right {
+  background: transparent; }
+
 .start-sm {
   justify-content: flex-start;
   text-align: start; }
@@ -5912,6 +5934,10 @@ main {
   main > .container {
     max-width: 100%;
     padding: 0; }
+  main.full-width {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0; }
 
 .logo {
   width: 120px; }
@@ -6339,4 +6365,82 @@ main {
     font-size: 2rem; }
   .active-demo .card__list--price-details {
     border-bottom: transparent; }
+
+.demo1-card__body {
+  padding: 10px 15px; }
+
+.demo1-card__product-title {
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+  font-size: 2rem;
+  font-family: "Heebo-600"; }
+
+.demo1-card__discription {
+  font-family: "Heebo-regular"; }
+
+.demo1-card .action__btn {
+  padding: 15px 0;
+  font-size: 20px;
+  font-size: 2rem; }
+
+.slider-instance-wrapper {
+  position: relative; }
+
+.swiper-slide--main {
+  height: 100vh; }
+
+.swiper-slide__card {
+  position: relative; }
+  .swiper-slide__card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20vh;
+    background: rgba(0, 0, 0, 0.8);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)); }
+
+.swiper-slide__card--header {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  display: flex; }
+
+.swiper-slide__product-title {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  font-size: 2.4rem;
+  font-family: "Heebo-600"; }
+
+.swiper-slide__discription {
+  color: #fff;
+  font-family: "Heebo-regular";
+  font-size: 18px;
+  font-size: 1.8rem; }
+
+.swiper-slide .action__btn {
+  color: #fff;
+  font-size: 30px;
+  font-size: 3rem;
+  padding: 0 15px;
+  position: relative;
+  top: 10px; }
+
+.swiper-thumb {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-end; }
+  .swiper-thumb__card {
+    width: 90px !important;
+    height: 90px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #fff; }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,25 @@
+.swiper-coverflow {
+    
+
+    .swiper-slide.swiper-slide-next ,
+    .swiper-slide.swiper-slide-prev {
+        transform: translate3d(0px, 0px, -300px) rotateX(0deg) rotateY(0deg ) scale(1) !important;
+        @include opacity(1);
+    }
+    .swiper-slide {
+        transform: translate3d(0px, 0px, -600px) rotateX(0deg) rotateY(0deg ) scale(1) !important;
+        @include opacity(.6);
+    }
+    .swiper-slide.swiper-slide-active{
+        transition-duration: 0ms;
+    transform: translate3d(0px, 0px, -1.68168px) rotateX(0deg) rotateY(0.840841deg) scale(1) !important;
+    z-index: 1;
+    @include opacity(1)
+    }
+    
+}
+
+.swiper-coverflow.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-coverflow.swiper-container-3d .swiper-slide-shadow-right  {
+    background: transparent;
+}
