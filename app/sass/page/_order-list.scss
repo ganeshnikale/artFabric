@@ -1,0 +1,32 @@
+.order-list {
+    &--details-wrap {
+        height: 100%;
+        > .row {
+            height: 100%;
+        }
+    }
+
+    &--details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
+
+    &__label {
+        color: $black;
+        font-family: $fontBold;
+        @include font-size(14);
+        margin-bottom: 10px;
+    }
+
+    &__value {
+        color: $gray2;
+        @include font-size(16);
+        &--total {
+            @include font-size(22);
+            font-family: $fontSemiBold;
+            color: $black;
+        }
+    }
+}

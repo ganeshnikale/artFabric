@@ -1,0 +1,19 @@
+.progress {
+    width: 100%;
+    background-color: $gray4;
+    @include border-radius(10px);
+    height: 8px;
+    &-bar {
+        height: 100%;
+        @include border-radius(10px);
+        &-amber {
+            background-color: $progressBarAmber;
+        }
+        &-green {
+            background-color: $progressBarGreen;
+        }
+        &-red {
+            background-color: $progressBarRed;
+        }
+    }
+}

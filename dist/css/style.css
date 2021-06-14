@@ -5876,6 +5876,21 @@ table {
 .swiper-coverflow.swiper-container-3d .swiper-slide-shadow-right {
   background: transparent; }
 
+.progress {
+  width: 100%;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  height: 8px; }
+  .progress-bar {
+    height: 100%;
+    border-radius: 10px; }
+    .progress-bar-amber {
+      background-color: #ffab58; }
+    .progress-bar-green {
+      background-color: #3bb164; }
+    .progress-bar-red {
+      background-color: #ff5858; }
+
 .start-sm {
   justify-content: flex-start;
   text-align: start; }
@@ -6443,4 +6458,32 @@ main {
     padding: 5px;
     border-radius: 5px;
     background-color: #fff; }
+
+.order-list--details-wrap {
+  height: 100%; }
+  .order-list--details-wrap > .row {
+    height: 100%; }
+
+.order-list--details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%; }
+
+.order-list__label {
+  color: #000;
+  font-family: "Heebo-bold";
+  font-size: 14px;
+  font-size: 1.4rem;
+  margin-bottom: 10px; }
+
+.order-list__value {
+  color: #666666;
+  font-size: 16px;
+  font-size: 1.6rem; }
+  .order-list__value--total {
+    font-size: 22px;
+    font-size: 2.2rem;
+    font-family: "Heebo-600";
+    color: #000; }
 /*# sourceMappingURL=style.css.map */
