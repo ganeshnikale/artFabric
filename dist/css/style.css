@@ -5525,7 +5525,7 @@ button.btn {
     list-style-type: none;
     font-size: 12px;
     font-size: 1.2rem;
-    color: #444444;
+    color: #989898;
     position: relative; }
     .breadcrum__list-item:not(:first-child) {
       margin-left: 10px;
@@ -5540,7 +5540,7 @@ button.btn {
         transform: rotate(20deg); }
   .breadcrum__link {
     text-decoration: none;
-    color: #989898; }
+    color: #444444; }
     .breadcrum__link:hover {
       color: #666666; }
 
@@ -6133,7 +6133,8 @@ main {
       font-size: 16px;
       font-size: 1.6rem;
       font-family: "Heebo-600";
-      color: #000; }
+      color: #000;
+      text-decoration: none; }
     .card__list--price-details .product-price {
       font-size: 16px;
       font-size: 1.6rem;

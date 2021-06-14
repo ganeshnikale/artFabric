@@ -75,6 +75,7 @@
                 @include font-size(16);
                 font-family: $fontSemiBold;
                 color:$black;
+                text-decoration: none;
             }
             .product-price{
                 @include font-size(16);
