@@ -42,6 +42,7 @@
                 }
                 .btn__flat--white-bg{
                     right: 0;
+                    padding-top: 6px;
                     &:focus,
                     &:active{
                         @include font-size(22);

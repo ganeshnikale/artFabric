@@ -6040,7 +6040,8 @@ main {
     top: 67px;
     z-index: 11;
     transition: all .3s ease;
-    width: 260px; }
+    width: 260px;
+    height: 100vh; }
     @media (min-width: 768px) {
       .left-nav-wraper {
         left: 0px; } }
@@ -6149,7 +6150,8 @@ main {
         font-size: 22px;
         font-size: 2.2rem; }
       .card__list--image .img-btn-wrap .btn__flat--white-bg {
-        right: 0; }
+        right: 0;
+        padding-top: 6px; }
         .card__list--image .img-btn-wrap .btn__flat--white-bg:focus, .card__list--image .img-btn-wrap .btn__flat--white-bg:active {
           font-size: 22px;
           font-size: 2.2rem; }

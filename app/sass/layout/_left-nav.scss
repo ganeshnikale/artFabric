@@ -13,6 +13,7 @@
       z-index: 11;
       transition: all .3s ease;
       width: 260px;
+      height: 100vh;
       @include media-breakpoint-up(md){
         
         left: 0px;
