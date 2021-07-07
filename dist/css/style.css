@@ -5945,7 +5945,7 @@ main {
     main {
       margin-left: 290px;
       margin-right: 0PX;
-      width: calc(100% - 290px); } }
+      width: calc(100% - 310px); } }
   main > .container {
     max-width: 100%;
     padding: 0; }
@@ -6132,7 +6132,8 @@ main {
   .card__list--image {
     position: relative;
     border-radius: 12px;
-    overflow: hidden; }
+    overflow: hidden;
+    height: 315px; }
     .card__list--image .img-btn-wrap {
       position: absolute;
       top: 0px;

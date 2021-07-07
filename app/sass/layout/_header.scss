@@ -19,7 +19,7 @@ main{
     @include media-breakpoint-up(md) { 
         margin-left: 290px;
         margin-right: 0PX;
-        width: calc(100% - 290px);
+        width: calc(100% - 310px);
      }
 
     > .container {
