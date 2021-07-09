@@ -20,7 +20,7 @@
             position: relative;
             @include border-radius(12px);
             overflow: hidden;
-            height:315px;
+            height:255px;
             
             .img-btn-wrap{
                 position: absolute;
@@ -51,6 +51,8 @@
                 }
             }
             img{
+                object-fit: cover   ;
+                height: 100%;
                 width: 100%;
             }
             .additional-info{
@@ -115,6 +117,9 @@
         }
         &--footer {
             padding: 10px 5px;
+           .btn-group {
+            justify-content:flex-end;
+           }
             .product-final-price{
                 @include font-size(14);
                 color: $gray1;

@@ -53,6 +53,17 @@
             font-family: $fontReg;
             color: $gray2;
         }
+
+        &-icon{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            .icon-wrap {
+                @include font-size(40);
+                color: $primary;
+                margin-right: 2rem;
+            }
+        }
         
     }
     .modal-body {

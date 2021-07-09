@@ -63,3 +63,10 @@ textarea {
 .cart-textarea {
     height: calc(100% - 30px);
 }
+
+textarea.form-control {
+    font-family: $fontReg;
+    @include font-size(18);
+    padding: 2rem;
+    min-height: 100px;
+}

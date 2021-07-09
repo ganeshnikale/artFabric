@@ -22,5 +22,10 @@
         &:not(:first-child){
             margin-left: 15px;
         }
+
+        .avbl-link {
+            display: block;
+            height: 100%;
+        }
     }
 }
