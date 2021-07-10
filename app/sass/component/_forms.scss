@@ -70,3 +70,18 @@ textarea.form-control {
     padding: 2rem;
     min-height: 100px;
 }
+
+
+.meter-placeholder {
+    position: relative;
+     &:after {
+        content: "/m";
+        position: absolute;
+        bottom: 22%;
+        color: $gray2;
+        right: 10px;
+        z-index: 999999;
+        @include opacity(.40);
+        @include font-size(18);
+     }
+}

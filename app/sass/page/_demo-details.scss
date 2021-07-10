@@ -4,7 +4,7 @@
     .product-image-title {
         color: $white;
         @include font-size(16);
-        font-family: $fontSemiBold;
+        font-family: $fontBold;
         margin-bottom: 5px;
     }
     p {
@@ -22,5 +22,26 @@
     }
     .card__list--price-details {
         border-bottom: transparent;
+        .icon-images {
+            @include font-size(50);
+            color: #8799b5;
+        }
     }
+}
+
+
+.add-product {
+    height: 100%;
+    min-height: 300px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background: rgba($black, .4);
+
+    p {
+        color: $black;
+        @include font-size(20);
+    }
+   
 }

@@ -5505,6 +5505,17 @@ button.btn {
   font-size: 25px;
   font-size: 2.5rem; }
 
+.btn-add-product {
+  background: #3e6da5;
+  background: linear-gradient(to bottom, #3e6da5, #0e2342);
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  padding: 2.5rem; }
+  .btn-add-product i {
+    font-size: 25px;
+    font-size: 2.5rem; }
+
 .card {
   border-radius: 16px;
   box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.17);
@@ -5794,6 +5805,20 @@ textarea.form-control {
   font-size: 1.8rem;
   padding: 2rem;
   min-height: 100px; }
+
+.meter-placeholder {
+  position: relative; }
+  .meter-placeholder:after {
+    content: "/m";
+    position: absolute;
+    bottom: 22%;
+    color: #666666;
+    right: 10px;
+    z-index: 999999;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    font-size: 18px;
+    font-size: 1.8rem; }
 
 .figure {
   margin-bottom: 20px; }
@@ -6396,7 +6421,7 @@ main {
     color: #fff;
     font-size: 16px;
     font-size: 1.6rem;
-    font-family: "Heebo-600";
+    font-family: "Heebo-bold";
     margin-bottom: 5px; }
   .active-demo p {
     color: #989898;
@@ -6411,6 +6436,23 @@ main {
     font-size: 2rem; }
   .active-demo .card__list--price-details {
     border-bottom: transparent; }
+    .active-demo .card__list--price-details .icon-images {
+      font-size: 50px;
+      font-size: 5rem;
+      color: #8799b5; }
+
+.add-product {
+  height: 100%;
+  min-height: 300px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.4); }
+  .add-product p {
+    color: #000;
+    font-size: 20px;
+    font-size: 2rem; }
 
 .demo1-card__body {
   padding: 10px 15px; }
