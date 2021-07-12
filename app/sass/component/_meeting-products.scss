@@ -17,6 +17,8 @@
         list-style-type: none;
         @include border-radius(12px);
         overflow: hidden;
+        position: relative;
+       
         &:not(:first-child){
             margin-left: 15px;
         }
@@ -24,6 +26,17 @@
             color: $gray2;
             @include font-size(16);
         }
+    }
+    &__item-count {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: rgba($white, .5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
 }

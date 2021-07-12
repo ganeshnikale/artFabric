@@ -41,6 +41,10 @@ button.btn {
         }
     }
 
+    &--long {
+        padding: spacing(15) spacing(80);
+    }
+
     &__light{
         background-color: $buttonLight;
         color: rgba($gray1, 10);
@@ -146,7 +150,21 @@ button.btn {
     border: none;
     @include border-radius(15px);
     padding: spacing(25);
+    cursor: pointer;
+    transition: all .3s ease;
     i {
         @include font-size(25)
     }
+    &:hover{
+        transform: translateY(-5px);
+        @include box-shadow( 0, 5px, 5px, 0, rgba(47, 89, 81, 0.34));
+    }
+    &:focus,
+    &:active,
+    .active{
+            transform: translateY(0);
+            @include box-shadow( 0, 10px, 21px, 0, rgba(47, 89, 81, 0.34));
+            background: $gray4;
+            color: $buttonFocus;
+        }
 }

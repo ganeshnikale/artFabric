@@ -5423,6 +5423,8 @@ button.btn {
       color: #102646; }
     button.btn__primary--long {
       padding: 1.5rem 8rem; }
+  button.btn--long {
+    padding: 1.5rem 8rem; }
   button.btn__light {
     background-color: #e2f2fb;
     color: #444444;
@@ -5511,10 +5513,21 @@ button.btn {
   color: #fff;
   border: none;
   border-radius: 15px;
-  padding: 2.5rem; }
+  padding: 2.5rem;
+  cursor: pointer;
+  transition: all .3s ease; }
   .btn-add-product i {
     font-size: 25px;
     font-size: 2.5rem; }
+  .btn-add-product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 5px 0 rgba(47, 89, 81, 0.34); }
+  .btn-add-product:focus, .btn-add-product:active,
+  .btn-add-product .active {
+    transform: translateY(0);
+    box-shadow: 0 10px 21px 0 rgba(47, 89, 81, 0.34);
+    background: #f5f5f5;
+    color: #102646; }
 
 .card {
   border-radius: 16px;
@@ -5710,13 +5723,25 @@ button.btn {
 .meeting-products__items {
   list-style-type: none;
   border-radius: 12px;
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
   .meeting-products__items:not(:first-child) {
     margin-left: 15px; }
   .meeting-products__items--text {
     color: #666666;
     font-size: 16px;
     font-size: 1.6rem; }
+
+.meeting-products__item-count {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 .meeting-details--title {
   font-size: 14px;
@@ -5834,6 +5859,8 @@ textarea.form-control {
       margin-left: 20px; }
   .figure__sub-title {
     color: #666666; }
+  .figure--center {
+    align-items: center; }
 
 .modal-content {
   border-radius: 35px;
@@ -5938,6 +5965,35 @@ table {
       background-color: #3bb164; }
     .progress-bar-red {
       background-color: #ff5858; }
+
+.border-list {
+  width: 100%;
+  border-top: 1px solid rgba(151, 151, 151, 0.22);
+  border-bottom: 1px solid rgba(151, 151, 151, 0.22);
+  padding: 10px 0; }
+  .border-list--item {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 20px; }
+    .border-list--item:not(:first-child) {
+      margin-left: 20px;
+      padding-left: 20px;
+      border-left: 1px solid rgba(151, 151, 151, 0.22); }
+    .border-list--item .progress {
+      background-color: #dedede; }
+  .border-list--title {
+    margin-bottom: 10px;
+    color: #000; }
+  .border-list--label {
+    font-size: 20px;
+    font-size: 2rem;
+    color: #000; }
+    .border-list--label-sm {
+      color: #666666;
+      font-size: 16px;
+      font-size: 1.6rem;
+      display: inline-block;
+      width: 120px; }
 
 .start-sm {
   justify-content: flex-start;
@@ -6448,7 +6504,7 @@ main {
   justify-content: center;
   display: flex;
   flex-direction: column;
-  background: rgba(0, 0, 0, 0.4); }
+  background: rgba(0, 0, 0, 0.04); }
   .add-product p {
     color: #000;
     font-size: 20px;
