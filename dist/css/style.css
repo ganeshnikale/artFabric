@@ -6341,6 +6341,8 @@ main {
       font-size: 25px;
       font-size: 2.5rem;
       height: 40px; }
+    .card__list--footer .dropdown-menu {
+      transform: translate3d(-90px, -34px, 0px) !important; }
 
 .card__details--product-image {
   border-radius: 15px;

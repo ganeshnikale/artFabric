@@ -141,6 +141,9 @@
                 @include font-size(25);
                 height: 40px;
             }
+            .dropdown-menu {
+                transform: translate3d(-90px, -34px, 0px) !important;
+            }
         }
         
         
