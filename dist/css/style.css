@@ -5612,6 +5612,10 @@ button.btn {
 
 .available-shades {
   display: flex; }
+  .available-shades-wrap {
+    display: flex;
+    overflow-x: auto;
+    padding-bottom: 25px; }
   .available-shades--title {
     font-family: "Heebo-600";
     font-size: 14px;

@@ -1,5 +1,10 @@
 .available-shades{
     display: flex;
+    &-wrap {
+        display: flex;
+        overflow-x: auto;
+        padding-bottom: 25px;
+    }
     &--title{
         font-family: $fontSemiBold;
         @include font-size(14);
