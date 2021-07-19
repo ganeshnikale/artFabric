@@ -1,0 +1,16 @@
+.grid-sizer,
+.grid-item { width: 20%; }
+
+.demo-view4-card { 
+    width: 40%;
+    margin: 20px 20px 20px 0;
+     &:first-child {
+          margin-top: 10%;
+    }
+ }
+
+ .masonry-grid {
+     width: 80%;
+     margin: 0 auto;
+     margin-left: 18%;
+ }

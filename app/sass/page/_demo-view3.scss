@@ -1,0 +1,18 @@
+.thumb-demo-3 {
+    position: relative;
+    bottom:0;
+    .swiper-wrapper {
+        display: grid;
+        grid-template-columns: 240px 240px;
+
+        .swiper-thumb__card{
+            width: 240px !important;
+            height: 240px !important;
+            padding: 25px;
+        }
+    }
+}
+ 
+  
+  
+

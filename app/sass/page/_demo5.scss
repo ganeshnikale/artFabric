@@ -5,7 +5,7 @@
 .swiper-slide {
 
     &--main {
-        height: 100vh;
+        height: 100%;
     }
     &__card {
         position: relative;
@@ -53,12 +53,14 @@
 
 .swiper-thumb {
     position: absolute;
-    bottom: 0;
+    bottom: 150px;
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: flex-end;
+
+    .swiper-wrapper {
+        display: flex;
+        justify-content: flex-end;
+    }
+    
     &__card {
         width: 90px !important;
         height: 90px;

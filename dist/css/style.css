@@ -5387,6 +5387,12 @@ h1.page-title {
 .transparent {
   background-color: transparent !important; }
 
+.height-100vh {
+  height: 100vh; }
+
+.height-100 {
+  height: 100%; }
+
 button.btn {
   background: transparent;
   outline: none;
@@ -5999,6 +6005,32 @@ table {
       display: inline-block;
       width: 120px; }
 
+.demo-thumbnail {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center; }
+  .demo-thumbnail--items {
+    list-style-type: none;
+    border-right: 1px solid rgba(151, 151, 151, 0.5);
+    margin-right: 15px;
+    padding-right: 15px; }
+  .demo-thumbnail--link {
+    display: block;
+    width: 30px; }
+
+.demo-footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 99; }
+  .demo-footer .card.demo-card {
+    border-radius: 16px 16px 0 0; }
+  .demo-footer .btn__slim {
+    padding: 6px 25px;
+    font-size: 14px;
+    font-size: 1.4rem; }
+
 .start-sm {
   justify-content: flex-start;
   text-align: start; }
@@ -6350,7 +6382,9 @@ main {
 
 .card__details--product-image {
   border-radius: 15px;
-  overflow: hidden; }
+  overflow: hidden;
+  position: sticky;
+  top: 80px; }
 
 .card__details-product-discription {
   font-family: "Heebo-regular";
@@ -6516,29 +6550,28 @@ main {
     font-size: 20px;
     font-size: 2rem; }
 
-.demo1-card__body {
-  padding: 10px 15px; }
-
-.demo1-card__product-title {
-  color: #000;
-  text-decoration: none;
-  font-size: 20px;
-  font-size: 2rem;
-  font-family: "Heebo-600"; }
-
-.demo1-card__discription {
-  font-family: "Heebo-regular"; }
-
-.demo1-card .action__btn {
-  padding: 15px 0;
-  font-size: 20px;
-  font-size: 2rem; }
+.demo1-card {
+  padding: 1rem; }
+  .demo1-card__body {
+    padding: 10px 15px; }
+  .demo1-card__product-title {
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+    font-size: 2rem;
+    font-family: "Heebo-600"; }
+  .demo1-card__discription {
+    font-family: "Heebo-regular"; }
+  .demo1-card .action__btn {
+    padding: 15px 0;
+    font-size: 20px;
+    font-size: 2rem; }
 
 .slider-instance-wrapper {
   position: relative; }
 
 .swiper-slide--main {
-  height: 100vh; }
+  height: 100%; }
 
 .swiper-slide__card {
   position: relative; }
@@ -6581,12 +6614,11 @@ main {
 
 .swiper-thumb {
   position: absolute;
-  bottom: 0;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: flex-end; }
+  bottom: 150px;
+  width: 100%; }
+  .swiper-thumb .swiper-wrapper {
+    display: flex;
+    justify-content: flex-end; }
   .swiper-thumb__card {
     width: 90px !important;
     height: 90px;
@@ -6621,4 +6653,30 @@ main {
     font-size: 2.2rem;
     font-family: "Heebo-600";
     color: #000; }
+
+.thumb-demo-3 {
+  position: relative;
+  bottom: 0; }
+  .thumb-demo-3 .swiper-wrapper {
+    display: grid;
+    grid-template-columns: 240px 240px; }
+    .thumb-demo-3 .swiper-wrapper .swiper-thumb__card {
+      width: 240px !important;
+      height: 240px !important;
+      padding: 25px; }
+
+.grid-sizer,
+.grid-item {
+  width: 20%; }
+
+.demo-view4-card {
+  width: 40%;
+  margin: 20px 20px 20px 0; }
+  .demo-view4-card:first-child {
+    margin-top: 10%; }
+
+.masonry-grid {
+  width: 80%;
+  margin: 0 auto;
+  margin-left: 18%; }
 /*# sourceMappingURL=style.css.map */

@@ -4,6 +4,8 @@
         &--product-image{
             @include border-radius(15px);
             overflow: hidden;
+            position: sticky;
+            top: 80px;
         }
         
         &-product-discription{

@@ -1,0 +1,32 @@
+.demo-thumbnail {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    &--items {
+        list-style-type: none;
+        border-right: 1px solid rgba($borderColor, .5);
+        margin-right: 15px;
+        padding-right: 15px;
+    }
+    &--link {
+        display: block;
+        width: 30px;
+    }
+}
+
+
+.demo-footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 99;
+    .card.demo-card {
+        border-radius: 16px 16px 0 0;
+    }
+    
+    .btn__slim {
+        padding: 6px 25px;
+        @include font-size(14);
+    }
+}
