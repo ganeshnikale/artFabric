@@ -1,9 +1,17 @@
 .grid-sizer,
 .grid-item { width: 20%; }
 
-.demo-view4-card { 
+.demo4-card { 
     width: 40%;
     margin: 20px 20px 20px 0;
+    padding:1rem;
+     
+    &__image-wrap {
+        height: 330px;
+        overflow: hidden;
+        @include border-radius(12px);
+    }
+
      &:first-child {
           margin-top: 10%;
     }

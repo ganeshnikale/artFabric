@@ -1,12 +1,11 @@
-.demo1-card {
+.demo2-card {
     padding: 1rem;
-
-    &__image-wrap{
-        height: 380px;
+    
+    &__image-wrap {
+        height: 330px;
         overflow: hidden;
         @include border-radius(12px);
     }
-    
     &__body {
         padding: 10px 15px;
     }
@@ -27,6 +26,7 @@
     }
 }
 
-.swiper-coverflow {
-    padding: 50px 0 20px 0;
+.demo-2 {
+    width: 400px !important;
+    margin: 0 10px;
 }

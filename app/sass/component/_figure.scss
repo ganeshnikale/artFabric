@@ -9,6 +9,7 @@
             width: 96px;
             height: 96px;
             @include border-radius(12px);
+            object-fit: cover;
         }
         &__figcaption {
             margin-left: 20px;

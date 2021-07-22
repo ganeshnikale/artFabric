@@ -5734,13 +5734,22 @@ button.btn {
   list-style-type: none;
   border-radius: 12px;
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  width: 80px;
+  height: 80px; }
+  .meeting-products__items img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
   .meeting-products__items:not(:first-child) {
     margin-left: 15px; }
   .meeting-products__items--text {
     color: #666666;
     font-size: 16px;
-    font-size: 1.6rem; }
+    font-size: 1.6rem;
+    align-items: center;
+    display: flex; }
 
 .meeting-products__item-count {
   position: absolute;
@@ -5864,7 +5873,9 @@ textarea.form-control {
     .figure--horizontal__image {
       width: 96px;
       height: 96px;
-      border-radius: 12px; }
+      border-radius: 12px;
+      -o-object-fit: cover;
+         object-fit: cover; }
     .figure--horizontal__figcaption {
       margin-left: 20px; }
   .figure__sub-title {
@@ -6273,7 +6284,7 @@ main {
     position: relative;
     border-radius: 12px;
     overflow: hidden;
-    height: 255px; }
+    height: 355px; }
     .card__list--image .img-btn-wrap {
       position: absolute;
       top: 0px;
@@ -6384,7 +6395,8 @@ main {
   border-radius: 15px;
   overflow: hidden;
   position: sticky;
-  top: 80px; }
+  top: 80px;
+  height: 400px; }
 
 .card__details-product-discription {
   font-family: "Heebo-regular";
@@ -6552,6 +6564,10 @@ main {
 
 .demo1-card {
   padding: 1rem; }
+  .demo1-card__image-wrap {
+    height: 380px;
+    overflow: hidden;
+    border-radius: 12px; }
   .demo1-card__body {
     padding: 10px 15px; }
   .demo1-card__product-title {
@@ -6566,6 +6582,34 @@ main {
     padding: 15px 0;
     font-size: 20px;
     font-size: 2rem; }
+
+.swiper-coverflow {
+  padding: 50px 0 20px 0; }
+
+.demo2-card {
+  padding: 1rem; }
+  .demo2-card__image-wrap {
+    height: 330px;
+    overflow: hidden;
+    border-radius: 12px; }
+  .demo2-card__body {
+    padding: 10px 15px; }
+  .demo2-card__product-title {
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+    font-size: 2rem;
+    font-family: "Heebo-600"; }
+  .demo2-card__discription {
+    font-family: "Heebo-regular"; }
+  .demo2-card .action__btn {
+    padding: 15px 0;
+    font-size: 20px;
+    font-size: 2rem; }
+
+.demo-2 {
+  width: 400px !important;
+  margin: 0 10px; }
 
 .slider-instance-wrapper {
   position: relative; }
@@ -6624,7 +6668,14 @@ main {
     height: 90px;
     padding: 5px;
     border-radius: 5px;
-    background-color: #fff; }
+    background-color: #fff;
+    cursor: pointer; }
+    .swiper-thumb__card img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover;
+      border-radius: 12px; }
 
 .order-list--details-wrap {
   height: 100%; }
@@ -6669,14 +6720,26 @@ main {
 .grid-item {
   width: 20%; }
 
-.demo-view4-card {
+.demo4-card {
   width: 40%;
-  margin: 20px 20px 20px 0; }
-  .demo-view4-card:first-child {
+  margin: 20px 20px 20px 0;
+  padding: 1rem; }
+  .demo4-card__image-wrap {
+    height: 330px;
+    overflow: hidden;
+    border-radius: 12px; }
+  .demo4-card:first-child {
     margin-top: 10%; }
 
 .masonry-grid {
   width: 80%;
   margin: 0 auto;
   margin-left: 18%; }
+
+.demo-meet-page {
+  display: flex;
+  overflow: auto; }
+  .demo-meet-page .meeting-products__items {
+    height: 160px;
+    width: 160px; }
 /*# sourceMappingURL=style.css.map */

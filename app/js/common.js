@@ -37,7 +37,7 @@ options = {
        
         coverflow: {
             rotate: 0,
-            stretch: 40,
+            stretch: 80,
             depth: 400,
             modifier: 1,
             
@@ -78,7 +78,7 @@ options = {
       });
 
     var swiperThumbnalSlide = new Swiper('.swiper-slide--main', {
-        spaceBetween: 10,
+        spaceBetween: 0,
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
@@ -124,10 +124,10 @@ var galleryThumbs = new Swiper('.gallery-thumbsxx', {
 galleryTop.controller.control = galleryThumbs;
 galleryThumbs.controller.control = galleryTop;
    
-// $('.masonry-grid').isotope({
-//     itemSelector: '.demo-view4-card',
-//     fitWidth: true
-// });
+$('.masonry-grid').isotope({
+    itemSelector: '.demo4-card',
+    fitWidth: true
+});
 
 
 $('.accordion__tab-header').click(function() {
