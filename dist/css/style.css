@@ -5535,6 +5535,10 @@ button.btn {
     background: #f5f5f5;
     color: #102646; }
 
+.btn-sm {
+  padding: 10px 15px !important;
+  font-size: 12px !important; }
+
 .card {
   border-radius: 16px;
   box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.17);
@@ -5716,7 +5720,14 @@ button.btn {
 
 .available-design .swiper-slide {
   border-radius: 12px;
-  overflow: hidden; }
+  overflow: hidden;
+  width: 160px !important;
+  height: 160px; }
+  .available-design .swiper-slide img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 160px;
+    width: 160px; }
 
 .meeting-products__count {
   font-size: 14px;

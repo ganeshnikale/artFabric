@@ -1,15 +1,20 @@
 
-
-
   .available-design{
     &.swiper-container {
       width: 100%;
       height: auto;
     }
     .swiper-slide{
-     
       @include border-radius(12px);
       overflow: hidden;
+      width: 160px !important;
+      height: 160px;
+
+      img {
+        object-fit: cover;
+        height: 160px;
+        width: 160px;
+      }
     }
   }
 
