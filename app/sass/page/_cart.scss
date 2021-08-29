@@ -14,8 +14,11 @@
     .qty-controll {
         margin-top: -12px;
     }
-
-    .icon-trash {
+    .btn.btn__flat {
+        padding: 0;
+        margin: 5px 20px;
+    }
+    .icon-trash, .icon-compose {
         @include font-size(25);
         color: $black;
     }
