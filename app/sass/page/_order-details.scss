@@ -1,0 +1,13 @@
+.card {
+    &__order-details {
+        margin-bottom: spacing(30);
+        @media (max-width: 576px) {
+            .border--right {
+                border-right: 1px solid $white !important;
+                border-bottom: 1px solid $border-color;
+                margin: spacing(10);
+                padding: spacing(10);
+            }
+        }
+    }
+}
