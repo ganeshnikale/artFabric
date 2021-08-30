@@ -1539,13 +1539,16 @@
     height: 1.5em; }
   .form-control::-moz-placeholder {
     color: #6c757d;
-    opacity: 1; }
+    opacity: 1;
+    font-size: 15px; }
   .form-control:-ms-input-placeholder {
     color: #6c757d;
-    opacity: 1; }
+    opacity: 1;
+    font-size: 15px; }
   .form-control::placeholder {
     color: #6c757d;
-    opacity: 1; }
+    opacity: 1;
+    font-size: 15px; }
   .form-control:-moz-read-only {
     background-color: #e9ecef;
     opacity: 1; }
@@ -6803,4 +6806,7 @@ main {
       margin: 0 10px;
       font-size: 18px;
       font-size: 1.8rem; }
+
+.card__add-address .form-controll {
+  margin-bottom: 2rem; }
 /*# sourceMappingURL=style.css.map */
