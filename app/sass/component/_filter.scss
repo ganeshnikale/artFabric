@@ -1,0 +1,32 @@
+
+
+.filter {
+    &-wraper {
+        .accordion-button {
+            @include font-size(16);
+        }
+        .accordion-item {
+            border:transparent;
+        }
+        .offcanvas-body {
+            height: 95vh;
+            overflow: auto;
+        }
+    }
+    &-filds {
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        height: 200px;
+        overflow-y: auto;
+        padding: 0 10px;
+    
+        li {
+            margin-right: 20px;
+            margin-bottom: 15px;
+            .form-check-label {
+                margin-left: 10px;
+            }
+        }
+    }
+}
