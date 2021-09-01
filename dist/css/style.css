@@ -6465,6 +6465,7 @@ table {
     margin-bottom: 15px; }
     .filter-filds li .form-check-label {
       margin-left: 10px; }
+
 .upload-wrapper {
   position: relative;
   overflow: hidden; }
@@ -7272,4 +7273,12 @@ main {
       border-bottom: 1px solid #dee2e6;
       margin: 1rem;
       padding: 1rem; } }
+
+.thank-you {
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+  height: 80vh !important;
+  align-items: center;
+  justify-content: center; }
 /*# sourceMappingURL=style.css.map */

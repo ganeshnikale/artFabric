@@ -1,0 +1,10 @@
+.thank {
+    &-you {
+        display: flex;
+        flex-direction: column;
+        flex: auto;
+        height: 80vh !important;
+        align-items: center;
+        justify-content: center;
+    }
+}
