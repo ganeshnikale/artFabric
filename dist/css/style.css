@@ -5396,6 +5396,10 @@ h1.page-title {
 .height-100 {
   height: 100%; }
 
+.swal2-popup.swal2-toast .swal2-title {
+  font-size: 16px;
+  font-size: 1.6rem; }
+
 button.btn {
   background: transparent;
   outline: none;
@@ -6094,8 +6098,14 @@ table {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: #ccc;
-    margin-bottom: 6px; }
+    background: #666666;
+    margin-bottom: 6px;
+    font-size: 16px;
+    font-size: 1.6rem;
+    color: #fff; }
+  .stepper-item .step-name {
+    font-size: 14px;
+    font-size: 1.4rem; }
   .stepper-item:first-child::before {
     content: none; }
   .stepper-item:last-child::after {
@@ -6105,16 +6115,41 @@ table {
   font-weight: bold; }
 
 .stepper-item.completed .step-counter {
-  background-color: #4bb543; }
+  background-color: #0699af; }
 
 .stepper-item.completed::after {
   position: absolute;
   content: "";
-  border-bottom: 2px solid #4bb543;
+  border-bottom: 2px solid #0699af;
   width: 100%;
   top: 20px;
   left: 50%;
   z-index: 3; }
+
+.search-dropdown-menu {
+  width: 250px;
+  padding: 0;
+  border: transparent; }
+  .search-dropdown-menu .form-controll {
+    padding: 10px; }
+
+.search-bar {
+  height: 30px;
+  font-size: 14px;
+  border-radius: 10px; }
+
+.search-predictions {
+  list-style-type: none;
+  max-height: 250px;
+  overflow: auto; }
+  .search-predictions li a.dropdown-item {
+    font-size: 14px;
+    font-size: 1.4rem;
+    padding: 10px; }
+
+.hide-icon:after {
+  visibility: hidden;
+  display: none; }
 
 .start-sm {
   justify-content: flex-start;
@@ -6373,6 +6408,9 @@ main {
     border-radius: 12px;
     overflow: hidden;
     height: 355px; }
+    @media only screen and (min-width: 1400px) {
+      .card__list--image {
+        height: 250px; } }
     .card__list--image .img-btn-wrap {
       position: absolute;
       top: 0px;

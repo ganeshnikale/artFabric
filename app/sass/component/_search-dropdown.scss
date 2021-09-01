@@ -1,0 +1,34 @@
+.search {
+    &-dropdown-menu{
+        width: 250px;
+        padding: 0;
+        border: transparent;
+        .form-controll {
+            padding: 10px;
+        }
+    }
+    &-bar {
+        height: 30px;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+    &-predictions {
+        list-style-type: none;
+        max-height: 250px;
+        overflow: auto;
+        li {
+            a.dropdown-item {
+                @include font-size(14);
+                padding: 10px;
+            }
+        }
+    }
+
+}
+
+.hide-icon {
+    &:after {
+        visibility: hidden;
+        display: none;
+    }
+}

@@ -21,6 +21,9 @@
             @include border-radius(12px);
             overflow: hidden;
             height:355px;
+            @media only screen and (min-width: 1400px) {
+                height:250px;
+            }
             
             .img-btn-wrap{
                 position: absolute;
