@@ -1,0 +1,38 @@
+ .card {
+     &--stats {
+         &-wraper {
+             list-style-type: none;
+             display: flex;
+             justify-content: space-between;
+             li {
+                 position: relative;
+                 &:not(:last-child) {
+                     &:after{
+                        content: "";
+                        position: absolute;
+                        height: 100%;
+                        width: 50%;
+                        top: 0;
+                        right: 0;
+                        border-right: 1px solid $borderColor;
+                        transform: translateX(50%);
+                     }
+                 }
+             }
+         }
+         &-label {
+             @include font-size(14);
+             font-family: $fontBold;
+             color:$gray2;
+         }
+         &-number {
+            color: $black;
+            font-family: $fontBold;
+            @include font-size(32);
+         }
+         &-details{
+             display: flex;
+             align-items: center;
+         }
+     }
+ }

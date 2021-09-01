@@ -6151,6 +6151,192 @@ table {
   visibility: hidden;
   display: none; }
 
+.card__upcoming-meeting {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  padding-right: 15px; }
+  .card__upcoming-meeting--date {
+    background-image: linear-gradient(90deg, #3e6da5, #0e2342);
+    padding: 25px 25px;
+    border-radius: 10px;
+    margin-right: 15px;
+    text-align: center; }
+    .card__upcoming-meeting--date .day {
+      color: #fff;
+      font-size: 12px;
+      font-size: 1.2rem;
+      font-family: "Heebo-regular";
+      line-height: 1; }
+    .card__upcoming-meeting--date .date, .card__upcoming-meeting--date .month {
+      color: #fff;
+      font-size: 40px;
+      font-size: 4rem;
+      font-family: "Heebo-bold";
+      line-height: 1.2; }
+    .card__upcoming-meeting--date .month {
+      font-size: 16px;
+      font-size: 1.6rem;
+      line-height: 1; }
+  .card__upcoming-meeting--details .meeting-with-label {
+    color: #444444;
+    font-family: "Heebo-600";
+    font-size: 14px;
+    font-size: 1.4rem; }
+  .card__upcoming-meeting--details .meeting-with-name {
+    color: #444444;
+    font-family: "Heebo-regular";
+    font-size: 18px;
+    font-size: 1.8rem; }
+  .card__upcoming-meeting--icon {
+    color: #102646;
+    font-size: 30px;
+    font-size: 3rem;
+    margin-left: auto; }
+
+.progress {
+  width: 45px;
+  height: 45px;
+  font-size: 30px;
+  color: #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  line-height: 200px;
+  margin: 20px; }
+  .progress::after {
+    content: "%"; }
+  .progress .title {
+    position: relative;
+    z-index: 100; }
+  .progress .overlay {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; }
+  .progress .left {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 5px solid #222235;
+    border-radius: 100px 0px 0px 100px;
+    border-right: 0;
+    transform-origin: right;
+    -webkit-animation: load1 1s linear forwards;
+            animation: load1 1s linear forwards; }
+  .progress .right {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 5px solid #222235;
+    border-radius: 100px 0px 0px 100px;
+    border-right: 0;
+    transform-origin: right; }
+  .progress .aqua {
+    border-color: #87bee9; }
+  .progress .turquoise {
+    border-color: #53ddcc; }
+  .progress .bittersweet {
+    border-color: #f97457; }
+  .progress .green {
+    border-color: #47a83a; }
+  .progress:nth-of-type(2) .right {
+    -webkit-animation: load2 .5s linear forwards 1s;
+            animation: load2 .5s linear forwards 1s; }
+  .progress:nth-of-type(3) .right {
+    -webkit-animation: load2 .5s linear forwards 1s;
+            animation: load2 .5s linear forwards 1s; }
+  .progress:last-of-type .right {
+    -webkit-animation: load3 .8s linear forwards 1s;
+            animation: load3 .8s linear forwards 1s; }
+  .progress:first-of-type .right {
+    -webkit-animation: load3 .8s linear forwards 1s;
+            animation: load3 .8s linear forwards 1s; }
+
+@-webkit-keyframes load1 {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(180deg); } }
+
+@keyframes load1 {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(180deg); } }
+
+@-webkit-keyframes load2 {
+  0% {
+    z-index: 100;
+    transform: rotate(180deg); }
+  100% {
+    z-index: 100;
+    transform: rotate(270deg); } }
+
+@keyframes load2 {
+  0% {
+    z-index: 100;
+    transform: rotate(180deg); }
+  100% {
+    z-index: 100;
+    transform: rotate(270deg); } }
+
+@-webkit-keyframes load3 {
+  0% {
+    z-index: 100;
+    transform: rotate(180deg); }
+  100% {
+    z-index: 100;
+    transform: rotate(315deg); } }
+
+@keyframes load3 {
+  0% {
+    z-index: 100;
+    transform: rotate(180deg); }
+  100% {
+    z-index: 100;
+    transform: rotate(315deg); } }
+
+.card--stats-wraper {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between; }
+  .card--stats-wraper li {
+    position: relative; }
+    .card--stats-wraper li:not(:last-child):after {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 50%;
+      top: 0;
+      right: 0;
+      border-right: 1px solid #979797;
+      transform: translateX(50%); }
+
+.card--stats-label {
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-family: "Heebo-bold";
+  color: #666666; }
+
+.card--stats-number {
+  color: #000;
+  font-family: "Heebo-bold";
+  font-size: 32px;
+  font-size: 3.2rem; }
+
+.card--stats-details {
+  display: flex;
+  align-items: center; }
+
 .start-sm {
   justify-content: flex-start;
   text-align: start; }

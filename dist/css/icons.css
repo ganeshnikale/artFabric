@@ -95,3 +95,6 @@
 .icon-images:before {
   content: "\73";
 }
+.icon-bell:before {
+  content: "\74";
+}

@@ -1,0 +1,50 @@
+.card {
+    &__upcoming-meeting {
+        padding:0;
+        display: flex;
+        align-items: center;
+        @include border-radius(10px);
+        padding-right: 15px;
+        &--date {
+            background-image: linear-gradient(90deg,$quaternary,$quinary);
+            padding: 25px 25px;
+            @include border-radius(10px);
+            margin-right: 15px;
+            text-align: center;
+            .day {
+                color: $white;
+                @include font-size(12);
+                font-family: $fontReg;
+                line-height: 1;
+            }
+            .date{
+                color: $white;
+                @include font-size(40);
+                font-family: $fontBold;
+                line-height: 1.2;
+            }
+            .month {
+                @extend .date;
+                @include font-size(16);
+                line-height: 1;
+            }
+        }
+        &--details {
+            .meeting-with-label {
+                color: $gray1;
+                font-family: $fontSemiBold;
+                @include font-size(14);
+            }
+            .meeting-with-name {
+                color: $gray1;
+                font-family: $fontReg;
+                @include font-size(18);
+            }
+        }
+        &--icon {
+            color: $buttonFocus;
+            @include font-size(30);
+            margin-left: auto;
+        }
+    }
+}
