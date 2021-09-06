@@ -5505,7 +5505,7 @@ h1.page-title {
   font-size: 16px;
   font-size: 1.6rem; }
 
-button.btn {
+.btn {
   background: transparent;
   outline: none;
   border: transparent;
@@ -5513,16 +5513,16 @@ button.btn {
   font-family: "Heebo-bold";
   cursor: pointer;
   transition: all .3s ease; }
-  button.btn__round-s {
+  .btn__round-s {
     border-radius: 1.2rem;
     border: 1px solid #213c51;
     font-size: 15px;
     font-size: 1.5rem;
     color: #213c51; }
-  button.btn__round {
+  .btn__round {
     border-radius: 2.4rem;
     border: 1px solid #213c51; }
-  button.btn__primary {
+  .btn__primary {
     background: #0699af;
     background: linear-gradient(to bottom, #0699af, #39a29e);
     font-size: 18px;
@@ -5530,55 +5530,55 @@ button.btn {
     border-radius: 24px;
     box-shadow: 0 10px 21px 0 rgba(47, 89, 81, 0.34);
     color: #fff; }
-    button.btn__primary:hover {
+    .btn__primary:hover {
       transform: translateY(-5px);
       box-shadow: 0 5px 5px 0 rgba(47, 89, 81, 0.34); }
-    button.btn__primary:focus, button.btn__primary:active,
-    button.btn__primary .active {
+    .btn__primary:focus, .btn__primary:active,
+    .btn__primary .active {
       transform: translateY(0);
       box-shadow: 0 10px 21px 0 rgba(47, 89, 81, 0.34);
       background: #f5f5f5;
       color: #102646; }
-    button.btn__primary--long {
+    .btn__primary--long {
       padding: 1.5rem 8rem; }
-  button.btn--long {
+  .btn--long {
     padding: 1.5rem 8rem; }
-  button.btn__light {
+  .btn__light {
     background-color: #e2f2fb;
     color: #444444;
     border-radius: 12px;
     font-size: 16px;
     font-size: 1.6rem; }
-  button.btn__flat {
+  .btn__flat {
     padding: 5px 20px;
     display: inline;
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content; }
-    button.btn__flat--dark-bg {
+    .btn__flat--dark-bg {
       background: #132a4c;
       border: 1px solid #fff;
       color: #fff;
       border-radius: 12px; }
-      button.btn__flat--dark-bg:hover, button.btn__flat--dark-bg:focus, button.btn__flat--dark-bg:active, button.btn__flat--dark-bg .active {
+      .btn__flat--dark-bg:hover, .btn__flat--dark-bg:focus, .btn__flat--dark-bg:active, .btn__flat--dark-bg .active {
         background-color: #fff;
         color: #132a4c;
         border: 1px solid #132a4c;
         font-size: 22px;
         font-size: 2.2rem; }
-    button.btn__flat--white-bg {
+    .btn__flat--white-bg {
       background-color: #fff;
       color: #132a4c;
       border-radius: 12px; }
-      button.btn__flat--white-bg:hover, button.btn__flat--white-bg:focus, button.btn__flat--white-bg:active, button.btn__flat--white-bg .active {
+      .btn__flat--white-bg:hover, .btn__flat--white-bg:focus, .btn__flat--white-bg:active, .btn__flat--white-bg .active {
         background-color: #132a4c;
         color: #fff; }
-  button.btn__slim {
+  .btn__slim {
     padding: 12px 24px;
     font-size: 16px;
     font-size: 1.6rem;
     font-family: "Heebo-regular"; }
-  button.btn__block {
+  .btn__block {
     width: 100%; }
 
 .btn-group {
@@ -6300,7 +6300,7 @@ table {
     font-size: 3rem;
     margin-left: auto; }
 
-.progress {
+.progress-circle {
   width: 45px;
   height: 45px;
   font-size: 30px;
@@ -6311,19 +6311,19 @@ table {
   text-align: center;
   line-height: 200px;
   margin: 20px; }
-  .progress::after {
+  .progress-circle::after {
     content: "%"; }
-  .progress .title {
+  .progress-circle .title {
     position: relative;
     z-index: 100; }
-  .progress .overlay {
+  .progress-circle .overlay {
     width: 50%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 1; }
-  .progress .left {
+  .progress-circle .left {
     width: 50%;
     height: 100%;
     position: absolute;
@@ -6335,7 +6335,7 @@ table {
     transform-origin: right;
     -webkit-animation: load1 1s linear forwards;
             animation: load1 1s linear forwards; }
-  .progress .right {
+  .progress-circle .right {
     width: 50%;
     height: 100%;
     position: absolute;
@@ -6345,24 +6345,24 @@ table {
     border-radius: 100px 0px 0px 100px;
     border-right: 0;
     transform-origin: right; }
-  .progress .aqua {
+  .progress-circle .aqua {
     border-color: #87bee9; }
-  .progress .turquoise {
+  .progress-circle .turquoise {
     border-color: #53ddcc; }
-  .progress .bittersweet {
+  .progress-circle .bittersweet {
     border-color: #f97457; }
-  .progress .green {
+  .progress-circle .green {
     border-color: #47a83a; }
-  .progress:nth-of-type(2) .right {
+  .progress-circle:nth-of-type(2) .right {
     -webkit-animation: load2 .5s linear forwards 1s;
             animation: load2 .5s linear forwards 1s; }
-  .progress:nth-of-type(3) .right {
+  .progress-circle:nth-of-type(3) .right {
     -webkit-animation: load2 .5s linear forwards 1s;
             animation: load2 .5s linear forwards 1s; }
-  .progress:last-of-type .right {
+  .progress-circle:last-of-type .right {
     -webkit-animation: load3 .8s linear forwards 1s;
             animation: load3 .8s linear forwards 1s; }
-  .progress:first-of-type .right {
+  .progress-circle:first-of-type .right {
     -webkit-animation: load3 .8s linear forwards 1s;
             animation: load3 .8s linear forwards 1s; }
 
